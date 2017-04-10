@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="FizzBuzz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUo-4f-own">
+                                <rect key="frame" x="295" y="676" width="99" height="40"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" red="0.97254901960784312" green="0.95294117647058818" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 / 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqi-K1-F4U">
+                                <rect key="frame" x="350.66666666666674" y="90.333333333333314" width="43.333333333333314" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.97254901960784312" green="0.95294117647058818" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ucZ-fV-1ec">
+                                <rect key="frame" x="60" y="221" width="294" height="294"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMG-yP-mde">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="142"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="numberButton"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
+                                        <state key="normal" title="0" backgroundImage="button_border">
+                                            <color key="titleColor" red="0.9933337351" green="1" blue="0.98441165350000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1lS-d6-vlN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klb-3d-9eE">
+                                        <rect key="frame" x="152.33333333333337" y="0.0" width="141.66666666666663" height="142"/>
+                                        <state key="normal" image="champagne" backgroundImage="button_border">
+                                            <color key="titleColor" red="0.9933337351" green="1" blue="0.98441165350000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tm-HU-sWG">
+                                        <rect key="frame" x="152.33333333333337" y="152.33333333333331" width="141.66666666666663" height="141.66666666666669"/>
+                                        <state key="normal" image="space" backgroundImage="button_border">
+                                            <color key="titleColor" red="0.9933337351" green="1" blue="0.98441165350000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKF-hz-sDx">
+                                        <rect key="frame" x="0.0" y="152.33333333333331" width="142" height="141.66666666666669"/>
+                                        <state key="normal" image="lightning" backgroundImage="button_border">
+                                            <color key="titleColor" red="0.9933337351" green="1" blue="0.98441165350000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SMG-yP-mde" firstAttribute="leading" secondItem="ucZ-fV-1ec" secondAttribute="leading" id="16H-he-FHl"/>
+                                    <constraint firstItem="Klb-3d-9eE" firstAttribute="height" secondItem="SMG-yP-mde" secondAttribute="height" id="4IU-oA-gJX"/>
+                                    <constraint firstItem="VKF-hz-sDx" firstAttribute="width" secondItem="SMG-yP-mde" secondAttribute="width" id="5fB-2K-ugj"/>
+                                    <constraint firstItem="6Tm-HU-sWG" firstAttribute="width" secondItem="SMG-yP-mde" secondAttribute="width" id="7p2-xc-lEW"/>
+                                    <constraint firstItem="SMG-yP-mde" firstAttribute="top" secondItem="ucZ-fV-1ec" secondAttribute="top" id="DHw-kq-Gky"/>
+                                    <constraint firstItem="Klb-3d-9eE" firstAttribute="width" secondItem="SMG-yP-mde" secondAttribute="width" id="T6g-Vg-3Gt"/>
+                                    <constraint firstAttribute="bottom" secondItem="VKF-hz-sDx" secondAttribute="bottom" id="Tv1-cT-2Lp"/>
+                                    <constraint firstAttribute="width" secondItem="ucZ-fV-1ec" secondAttribute="height" multiplier="1:1" id="XHA-aA-DfL"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Tm-HU-sWG" secondAttribute="bottom" id="bEX-KM-yIp"/>
+                                    <constraint firstItem="Klb-3d-9eE" firstAttribute="top" secondItem="ucZ-fV-1ec" secondAttribute="top" id="fc8-72-ezt"/>
+                                    <constraint firstItem="6Tm-HU-sWG" firstAttribute="height" secondItem="SMG-yP-mde" secondAttribute="height" id="fdh-8k-cfJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Klb-3d-9eE" secondAttribute="trailing" id="iEP-05-nhV"/>
+                                    <constraint firstItem="VKF-hz-sDx" firstAttribute="leading" secondItem="ucZ-fV-1ec" secondAttribute="leading" id="jqM-vb-FEz"/>
+                                    <constraint firstItem="VKF-hz-sDx" firstAttribute="height" secondItem="SMG-yP-mde" secondAttribute="height" id="kSE-To-pCp"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Tm-HU-sWG" secondAttribute="trailing" id="nE2-WD-lsJ"/>
+                                    <constraint firstItem="SMG-yP-mde" firstAttribute="height" secondItem="ucZ-fV-1ec" secondAttribute="height" multiplier="0.48" id="ySX-vX-1Gs"/>
+                                    <constraint firstItem="SMG-yP-mde" firstAttribute="width" secondItem="ucZ-fV-1ec" secondAttribute="width" multiplier="0.48" id="zJg-s4-LOu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.72156862745098038" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ucZ-fV-1ec" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="0Et-m0-oem"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jUo-4f-own" secondAttribute="bottom" constant="20" id="4MN-ze-ePX"/>
+                            <constraint firstItem="ucZ-fV-1ec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6br-j8-ZIq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jUo-4f-own" secondAttribute="trailing" id="GP9-3g-OYi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cqi-K1-F4U" secondAttribute="bottom" constant="618" id="Lmx-aE-9xk"/>
+                            <constraint firstItem="ucZ-fV-1ec" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YqI-ut-tPs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cqi-K1-F4U" secondAttribute="trailing" id="eil-hn-WyU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberButton" destination="SMG-yP-mde" id="ICp-nh-ejP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_border" width="400" height="400"/>
+        <image name="champagne" width="65" height="66"/>
+        <image name="lightning" width="38" height="66"/>
+        <image name="space" width="62" height="66"/>
+    </resources>
+</document>
